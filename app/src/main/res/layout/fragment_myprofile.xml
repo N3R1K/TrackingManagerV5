@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="100dp"
+                android:elevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>>
+    <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="20sp"
+      android:layout_marginTop="40sp"
+      android:layout_marginStart="20sp"
+      android:layout_marginEnd="20sp"
+
+      >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+
+          >
+
+          <TextView
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:text="@string/user_name"
+              android:fontFamily="@font/titilliumweb"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:padding="20sp"
+              android:textColor="@color/colorPrimary"
+              />
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:src="@color/colorPrimary"
+              />
+          <TextView
+              android:id="@+id/txtUserName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="20sp"
+              android:fontFamily="@font/titilliumweb"
+              android:textSize="15dp"
+              />
+
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/txtUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20sp"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/txtUserCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20sp"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:fontFamily="@font/titilliumweb"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="20sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorPrimary"
+                    />
+
+                <Spinner
+                    android:id="@+id/spnrLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/titilliumweb"
+                    android:padding="20sp"
+                    android:entries="@array/language" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:id="@+id/CrdEdit"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#2196F3"
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/edit"
+                android:gravity="center"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:id="@+id/CrdLogout"
+            android:layout_marginBottom="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#E91E63"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/log_out"
+                    android:gravity="center"
+                    android:fontFamily="@font/titilliumweb"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="10sp"
+
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+</ScrollView>

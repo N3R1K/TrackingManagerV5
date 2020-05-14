@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/crdParent"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="40sp"
+            android:layout_marginStart="10sp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#F44336"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10sp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="@string/title_2"
+                    android:textColor="#4A4A4A"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="="
+                    android:textColor="#4A4A4A"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="My Money in Pocket"
+                    android:textSize="16dp"
+                    android:textColor="#737272"
+                    android:fontFamily="@font/titilliumweb"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/value_2"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#4A4A4A"
+                    android:fontFamily="@font/titilliumweb"
+                    />
+                <TextView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="="
+                    android:textColor="#4A4A4A"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtValue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="500$"
+                    android:textSize="18dp"
+                    android:textColor="#737272"
+                    android:fontFamily="@font/titilliumweb"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="@string/changevalue_2"
+                    android:textColor="#4A4A4A"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="="
+                    android:textColor="#4A4A4A"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtSCV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/titilliumweb"
+                    android:text="5$"
+                    android:textColor="#737272"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

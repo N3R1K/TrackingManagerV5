@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.Add.AddFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_2"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edittextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Title"
+                android:inputType="text"
+
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/value_2"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edittextValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Value"
+                android:inputType="numberDecimal"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/changevalue_2"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/edittextCSV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Standard Change Value"
+                android:inputType="numberDecimal"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_2"
+                android:fontFamily="@font/titilliumweb"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                />
+
+            <Spinner
+                android:id="@+id/SpnRUnitValues"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10sp"
+                android:entries="@array/SpnRUnitValues"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:fontFamily="@font/titilliumweb"
+        android:textStyle="bold"
+        android:backgroundTint="#2196F3"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="10sp"
+        />
+
+    </LinearLayout>
+</ScrollView>
