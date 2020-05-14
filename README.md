@@ -1,3 +1,10 @@
 # TrackingManagerV5
-default eMail Address: admin@gmail.com
-default Passwort:      admin
+
+What's new:
+-added language (German)
+-only allow one notification
+-several bug fixes
+
+Defaults:
+-Email Address: admin@gmail.com
+-Password:      admin
